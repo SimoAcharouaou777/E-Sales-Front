@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 import { FiTrash2, FiShoppingCart, FiHeart, FiArrowLeft } from "react-icons/fi"
 import { useCart } from "../context/CartContext"
 
-// Mock wishlist data
 const wishlistItems = [
     {
         id: 1,
@@ -36,7 +35,6 @@ const Wishlist = () => {
     }
 
     const handleRemoveFromWishlist = (id) => {
-        // In a real app, you would remove the item from the wishlist
         console.log("Remove item from wishlist:", id)
     }
 

@@ -1,4 +1,4 @@
-// Product data with real images
+
 export const products = [
     {
         id: 1,

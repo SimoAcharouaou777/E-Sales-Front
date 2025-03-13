@@ -4,14 +4,12 @@ import ProductCard from "../../components/ui/ProductCard"
 import { products } from "../../data/products"
 
 const Home = () => {
-    // Filter products by category
     const featuredProducts = products.filter((product) => product.featured).slice(0, 8)
     const newArrivals = products.filter((product) => product.new).slice(0, 4)
     const bestSellers = products.filter((product) => product.bestSeller).slice(0, 4)
 
     return (
         <div>
-            {/* Hero Section */}
             <section className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
                 <div className="container mx-auto px-4 py-16 md:py-24">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -42,7 +40,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Categories Section */}
             <section className="py-12 bg-gray-50">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl font-bold text-center mb-12">Shop by Category</h2>
@@ -68,7 +65,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Featured Products */}
             <section className="py-12">
                 <div className="container mx-auto px-4">
                     <div className="flex justify-between items-center mb-8">
@@ -85,7 +81,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Banner */}
             <section className="py-12 bg-gray-900 text-white">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -106,7 +101,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* New Arrivals & Best Sellers */}
             <section className="py-12">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-8">
@@ -125,7 +119,6 @@ const Home = () => {
                             </div>
                         </div>
 
-                        {/* Best Sellers */}
                         <div>
                             <div className="flex justify-between items-center mb-6">
                                 <h2 className="text-2xl font-bold">Best Sellers</h2>
@@ -143,7 +136,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Newsletter */}
             <section className="py-12 bg-gray-100">
                 <div className="container mx-auto px-4">
                     <div className="max-w-xl mx-auto text-center">

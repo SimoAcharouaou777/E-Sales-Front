@@ -19,7 +19,6 @@ const ProductDetail = () => {
     const { id } = useParams()
     const { addItem } = useCart()
 
-    // Find the product by ID
     const product = products.find((p) => p.id === Number.parseInt(id)) || products[0]
 
     const [selectedImage, setSelectedImage] = useState(0)
@@ -82,7 +81,6 @@ const ProductDetail = () => {
                     )}
                 </div>
 
-                {/* Product Info */}
                 <div>
                     <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
 
@@ -118,7 +116,6 @@ const ProductDetail = () => {
                         <p className="text-gray-700">{product.description}</p>
                     </div>
 
-                    {/* Color Selection */}
                     {product.colors && (
                         <div className="mb-6">
                             <h3 className="text-sm font-medium text-gray-900 mb-2">Color</h3>
@@ -140,7 +137,6 @@ const ProductDetail = () => {
                         </div>
                     )}
 
-                    {/* Size Selection */}
                     {product.sizes && (
                         <div className="mb-6">
                             <div className="flex items-center justify-between mb-2">
@@ -167,7 +163,6 @@ const ProductDetail = () => {
                         </div>
                     )}
 
-                    {/* Quantity */}
                     <div className="mb-6">
                         <h3 className="text-sm font-medium text-gray-900 mb-2">Quantity</h3>
                         <div className="flex items-center border border-gray-300 rounded-md w-32">
@@ -189,7 +184,6 @@ const ProductDetail = () => {
                         </div>
                     </div>
 
-                    {/* Add to Cart */}
                     <div className="flex flex-col sm:flex-row gap-4 mb-8">
                         <button
                             onClick={handleAddToCart}
@@ -204,7 +198,6 @@ const ProductDetail = () => {
                         </button>
                     </div>
 
-                    {/* Product Features */}
                     <div className="border-t pt-6">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <div className="flex items-start">
@@ -233,7 +226,6 @@ const ProductDetail = () => {
                 </div>
             </div>
 
-            {/* Product Details Tabs */}
             <div className="mt-16">
                 <div className="border-b border-gray-200">
                     <nav className="-mb-px flex space-x-8">
@@ -279,7 +271,6 @@ const ProductDetail = () => {
                 </div>
             </div>
 
-            {/* Related Products */}
             <div className="mt-16">
                 <h2 className="text-2xl font-bold mb-6">You May Also Like</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

@@ -36,10 +36,8 @@ const Checkout = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        // In a real app, you would process the payment here
         console.log("Order submitted:", { items, totalPrice, shippingInfo: formData })
 
-        // Clear the cart and redirect to success page
         clearCart()
         navigate("/order-success")
     }

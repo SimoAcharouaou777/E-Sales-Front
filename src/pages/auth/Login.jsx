@@ -23,10 +23,8 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        // In a real app, you would handle authentication here
         console.log("Login form submitted:", formData)
 
-        // Simulate successful login
         navigate("/")
     }
 

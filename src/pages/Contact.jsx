@@ -28,17 +28,14 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        // In a real app, you would send the form data to your backend
         console.log("Form submitted:", formData)
 
-        // Simulate successful form submission
         setFormStatus({
             submitted: true,
             success: true,
             message: "Thank you for your message! We will get back to you soon.",
         })
 
-        // Reset form
         setFormData({
             name: "",
             email: "",
@@ -217,7 +214,7 @@ const Contact = () => {
                     <div className="bg-white p-6 rounded-lg shadow-md">
                         <h3 className="text-xl font-bold mb-4">Find Us</h3>
                         <div className="aspect-video bg-gray-200 rounded-md overflow-hidden">
-                            {/* In a real app, you would embed a Google Map here */}
+
                             <img
                                 src="https://via.placeholder.com/600x400?text=Map"
                                 alt="Map"

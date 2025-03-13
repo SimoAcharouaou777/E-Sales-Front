@@ -4,7 +4,6 @@ import { FiUsers, FiTarget, FiAward, FiTruck } from "react-icons/fi"
 const About = () => {
     return (
         <div className="container mx-auto px-4 py-12">
-            {/* Hero Section */}
             <div className="text-center mb-16">
                 <h1 className="text-4xl font-bold mb-4">About E-Sales</h1>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -12,7 +11,6 @@ const About = () => {
                 </p>
             </div>
 
-            {/* Our Story */}
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
                 <div>
                     <h2 className="text-3xl font-bold mb-6">Our Story</h2>
@@ -41,7 +39,6 @@ const About = () => {
                 </div>
             </div>
 
-            {/* Our Values */}
             <div className="mb-20">
                 <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -85,7 +82,6 @@ const About = () => {
                 </div>
             </div>
 
-            {/* Team Section */}
             <div className="mb-20">
                 <h2 className="text-3xl font-bold text-center mb-12">Our Team</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -120,7 +116,6 @@ const About = () => {
                 </div>
             </div>
 
-            {/* CTA Section */}
             <div className="bg-primary text-white rounded-lg p-8 md:p-12 text-center">
                 <h2 className="text-3xl font-bold mb-4">Join Our Journey</h2>
                 <p className="text-xl mb-8 max-w-2xl mx-auto">

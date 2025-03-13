@@ -23,7 +23,6 @@ const Register = () => {
             [name]: type === "checkbox" ? checked : value,
         })
 
-        // Clear error when field is edited
         if (errors[name]) {
             setErrors({
                 ...errors,
@@ -71,10 +70,8 @@ const Register = () => {
             return
         }
 
-        // In a real app, you would handle registration here
         console.log("Registration form submitted:", formData)
 
-        // Simulate successful registration
         navigate("/login")
     }
 
